@@ -1,0 +1,234 @@
+.app {
+  max-width: 390px;
+  margin: auto;
+  height: 100vh;
+}
+/* //// HOME */
+.desenvolvidopor{
+  padding: 5%;
+}
+
+.radiohelp{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.radiohelpcolor{
+  color: rgba(49, 24, 100, 0.761)!important;
+}
+
+.botaodohome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+///// MODALIDADE */
+
+.radiohelp{
+  color: #1c1a62!important;
+}
+
+.principaldamodalidade{
+  max-width: 390px;
+  height: 100%;
+ background-color: #a3a3a41d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.lesoesealteraçoesmod{
+  background-color: rgb(255, 255, 255);
+  width: 360px;
+  height: 23vh;
+  padding: 30px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.lesoesealteraçoesmod a{
+  color: rgba(49, 24, 100, 0.761);
+}
+
+.inner{
+  display: flex;
+}
+
+.item{
+  min-height: 130px;
+  min-width: 130px;
+  margin:10px;
+  background-color: rgba(49, 24, 100, 0.761);
+  border-radius: 1.3rem;
+  color: white!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.item a {
+  color: white!important;
+  
+}
+.item2{
+  min-height: 130px;
+  min-width: 130px;
+  margin:10px;
+  background-color: rgba(49, 24, 100, 0.761);
+  border-radius: 1.3rem;
+  color: white!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.item2 a {
+  color: white!important;
+  
+}
+
+.item2 img{
+  width: 40px;
+  height: 40px;
+  border-radius: 2em;
+}
+
+.botaodecoracao{
+  background-color: rgba(49, 24, 100, 0.761);
+}
+
+.item img{
+  width: 40px;
+  height: 40px;
+  border-radius: 2em;
+
+}
+
+.carousel{
+  cursor: grab;
+  overflow: hidden;
+}
+
+.carouselpai{
+  max-width: 390px;
+}
+
+.partelaudadormod{
+  height: 100%;
+  margin-top:25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.6rem 1.6rem 0 0;
+  overflow: hidden;
+}
+
+.separacaomod{
+  width: 40px;
+  height: 4px;
+  background-color: rgba(109, 109, 109, 0.611);
+  border-radius: 0.4rem;
+  
+
+}
+.rowdolaudador{
+  height: 80px;
+  font-size: 1.2rem;
+  color: rgba(49, 24, 100, 0.761)!important;
+  border-top: 1px solid rgb(225, 225, 225);
+  
+}
+
+.rowdolaudador a{
+  color: rgba(49, 24, 100, 0.761)!important;
+}
+
+.liink{
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: #26246e!important;
+}
+a:hover {
+   color: rgb(56, 56, 91)
+}
+
+/* ///////////// lesoes e alteraçoes */
+.principaldalesoesealt{
+  max-width: 390px;
+  height: 100%;
+ background-color: #a3a3a41d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.textfield{
+  width: 100%;
+}
+
+.lesoesealtpesquisa{
+  width: 100%;
+}
+.lesoesealtrespostas{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y:scroll;
+  
+}
+
+.lesoesvoltarbot{
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  height: 50px;
+  border: 0;
+}
+
+
+/* ////TODOS EM UM */
+.anatomyComponent{
+  width: 80%;
+  background-color: rgb(219, 213, 213);
+  margin: 17px;
+  height: 50px;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anatomyHeader{
+  height: 50px;
+}
+
+.img-modal{
+  text-align: center;
+}
+
+.img-modal img{
+  width: 200px !important;
+  height: 200px !important;;
+}
+.botaoPlanoDiv{
+  text-align: center;
+}
