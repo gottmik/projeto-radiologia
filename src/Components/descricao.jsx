@@ -15,16 +15,21 @@ export default function Descricao() {
   let radiolucida = "radiolucida";
   let radiopaca = "radiopaca";
   let bemdelimitada = "bem delimitada";
-  let maldelimitada = "mal delimitada";
-  let regular = "de formato regular";
-  let irregular = "de formato irregular";
+  let maldelimitada = "difusa";
+  let regular = "de margem regular";
+  let irregular = "de mergem irregular";
   let corticalizada = "com borda corticalizada";
+  let parcialcortical = "parcialmente corticalizada";
   let semcortical = "sem borda corticalizada";
   let hipodenso = "hipodensa";
   let hiperdenso = "hiperdensa";
   let unilocular = "unilocular";
   let multilocular = "multilocular";
-  let misto = "misto"
+  let misto = "mista"
+  let expansaocortical = "causando expansão das corticais"
+  let expansaoeadelgcortical = "causando expansão e adelgaçamento das corticais"
+  let desloc ="deslocamento dentário"
+  let estendese= "estende-se do(a) ___ até o(a) ___ "
 
   let [valor, setValor] = useState("");
 
@@ -44,10 +49,10 @@ export default function Descricao() {
   }
 
   return (
-    <div className="dBody">
-      <div className="PrimeiraSection">
-        <div className="Container">
-          <div className="paragrafo">
+    
+      <div className="primeirasectiondesc">
+        <div className="containerdesc">
+          <div className="paragrafodesc">
             <p value={valor}>{valor}</p>
           </div>
           <div className="Container-botoes">
@@ -266,33 +271,32 @@ export default function Descricao() {
                 </button>
               </div>
             </div>
-            <div className="Botoex">
+            
+            
+          </div>
+          <div className="Botoex">
               <div className="botoess">
                 <button className="copiar" onClick={Zerar}>
                   ZERAR
                 </button>
               </div>
               <div className="botoess">
-                <CopyToClipBoard text={Formatar(valor)}>
+                <CopyToClipBoard text={"Imagem: " + Formatar(valor)}>
                   <button className="copiar">COPIAR</button>
                 </CopyToClipBoard>
               </div>
-            </div>
-            
           </div>
-          <div className="Opçoes-provaveis paragrafo">
-           {valor}
-          </div>
+          
         </div>
-        <div className="PanoramicaVoltar">
+        <div className="">
           <Link to="/escolha">
-            <button className="voltarbutton">
+            <button className="lesoesvoltarbot">
               <KeyboardBackspaceIcon fontSize="large" />
             </button>
           </Link>
          
         </div>
       </div>
-    </div>
+    
   );
 }

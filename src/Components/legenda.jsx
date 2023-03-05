@@ -79,7 +79,7 @@ export default function Legenda() {
         </div>
         <div className="panoramica">
           <Box sx={{ width: "100%" }}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider"}}>
               <Tabs
                 value={value}
                 onChange={handleChange}
@@ -166,9 +166,9 @@ export default function Legenda() {
           ))}
           */}
         </div>
-        <div className="PanoramicaVoltar">
+        <div className="legvoltardiv">
           <Link to="/escolha">
-            <button className="voltarbutton">
+            <button className="botaoleg">
               <KeyboardBackspaceIcon fontSize="large" />
             </button>
           </Link>

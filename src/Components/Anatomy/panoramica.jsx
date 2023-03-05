@@ -1,5 +1,6 @@
 import React from "react";
 //// CSS
+import "../../index.css"
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
 
@@ -23,7 +24,7 @@ function Panoramica(props) {
     border: "2px solid #000",
     boxShadow: 24,
     p: 4,
-    maxHeight:"750px",
+    
   };
 
   let [state, setState] = useState(false);
@@ -44,8 +45,9 @@ function Panoramica(props) {
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
+            overflow-y="scroll"
           >
-            <Box sx={style}>
+            <Box className="modaloverflow" sx={style}>
               <div className="img-modal">
                 <img
                   onClick={mudarEstado}
@@ -54,7 +56,7 @@ function Panoramica(props) {
                 />
               </div>
 
-              <Typography id="modal-modal-title" variant="h6" component="h2">
+              <Typography className="propsname" id="modal-modal-title" variant="h6" component="h2">
                 {props.dado.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>

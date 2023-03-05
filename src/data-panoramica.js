@@ -364,7 +364,7 @@ export const Tomografias = [
       canaldohipoglossocoronaltomo,
       canaldohipoglossosagitaltomo,
     ],
-    texto: " ",
+    texto: "Localizado nas margens do forame magno. é uma passagem curta e frequentemente bipartida que permanece oculta acima da parte anterior de cada côndilo do occiptal.",
     corte: ["Axial", "Coronal", "Sagital"],
     info: "",
   },
@@ -396,7 +396,7 @@ export const Tomografias = [
   },
 
   {
-    id: 6,
+    id: 11,
     name: "Eminência Articular",
     img: [
       eminenciaarticularsagitall,
@@ -409,7 +409,7 @@ export const Tomografias = [
     info: "Facil de identificar em qualquer corte e tomara radiologica",
   },
   {
-    id: 7,
+    id: 12,
     name: "Espinha Nasal Anterior",
     img: [
       espinhanasalanterioraxiall,
@@ -422,7 +422,7 @@ export const Tomografias = [
     info: "Facil de identificar em qualquer corte e tomara radiologica",
   },
   {
-    id: 8,
+    id: 13,
     name: "Forame Mandibular",
     img: [
       foramemandibularaxialtomo,
@@ -435,7 +435,7 @@ export const Tomografias = [
   },
 
   {
-    id: 9,
+    id: 14,
     name: "Foramina Lingual",
     img: [
       foraminalingualaxialtomo,
@@ -447,7 +447,7 @@ export const Tomografias = [
     info: "",
   },
   {
-    id: 5,
+    id: 15,
     name: "Forame Incisivo",
     img: [forameincisicosagitall, forameincisivoaxiall, forameincisivocoronall],
     texto:
@@ -456,7 +456,7 @@ export const Tomografias = [
     info: "Facil de identificar em qualquer corte e tomara radiologica",
   },
   {
-    id: 4,
+    id: 16,
     name: "Osso Hioide",
     img: [ossohioidesagitall, ossohioideaxiall, ossohioidecoronall],
     texto:
@@ -465,7 +465,7 @@ export const Tomografias = [
     info: "Facil de identificar em qualquer corte e tomara radiologica",
   },
   {
-    id: 3,
+    id: 17,
     name: "Processo Coronoide",
     img: [
       processocoronoidedamandibulasagitall,
@@ -478,7 +478,7 @@ export const Tomografias = [
     info: "Facil de identificar em qualquer corte e tomara radiologica",
   },
   {
-    id: 2,
+    id: 18,
     name: "Seio Esfenoidal",
     img: [seioesfenoidalsagital, seioesfenoidalaxial, seioesfenoidalcoronal],
     texto:
@@ -488,7 +488,7 @@ export const Tomografias = [
   },
 
   {
-    id: 1,
+    id: 19,
     name: "Seio Frontal",
 
     img: [seiofrontaltomo, seiofrontalaxialtomo, seiofrontalcoronaltomo],

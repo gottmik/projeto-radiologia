@@ -32,6 +32,7 @@ const LesoeseAlteracoesPage = () => {
           label="Pesquise aqui"
           variant="filled"
           size="large"
+          color="secondary"
         />
       </div>
 

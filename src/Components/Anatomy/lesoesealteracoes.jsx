@@ -1,5 +1,6 @@
 import React from "react";
 //// CSS
+import "../../index.css"
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
 
@@ -26,7 +27,6 @@ function LesoeseAlteracoes(props) {
     border: "2px solid #000",
     boxShadow: 24,
     p: 4,
-    maxHeight:"750px",
   };
 
   return (
@@ -41,12 +41,13 @@ function LesoeseAlteracoes(props) {
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
+            overflow-y="scroll"
           >
-            <Box sx={style}>
+            <Box className="modaloverflow" sx={style}>
               <div className="img-modal">
                 <img src={props.dado.img} alt="Alguma imagem" />
               </div>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
+              <Typography className="propsname" id="modal-modal-title" variant="h6" component="h2">
                 {props.dado.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>

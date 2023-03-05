@@ -49,7 +49,7 @@ export default function Modelidades() {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <Header> Estruturas Anatomicas</Header>
+      <Header style={{fontSize:"1.2rem", marginTop:"3%"}}> Estruturas Anatomicas</Header>
       <Grid>
         <Grid.Row className="carouselpai" columns={1}>
           <Grid.Column>
@@ -102,7 +102,7 @@ export default function Modelidades() {
         <h4
           style={{
             height: "40px",
-            marginTop: "30px",
+            marginTop: "20px",
             marginLeft: "30px",
             paddingBottom: "10px",
             marginBottom: "10px",

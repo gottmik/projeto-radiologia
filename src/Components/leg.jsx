@@ -15,11 +15,11 @@ export default function Leg(props) {
 
 
   return (
-    <div className="Component">
+    <div className="componentleg">
       <div className="C1">
         <input type="text" onChange={handleUserTextChange} />
       </div>
-      <div className="Component2">
+      <div className="component2leg">
         <div className="C2" value={text}>
           {props.dado.frase}
         </div>

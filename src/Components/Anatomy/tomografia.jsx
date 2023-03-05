@@ -27,7 +27,6 @@ function Tomografia(props) {
     border: "2px solid #000",
     boxShadow: 24,
     p: 4,
-    maxHeight:"750px",
   };
 
   let [currentIndex, setCurrentIndex] = useState(0);
@@ -50,7 +49,7 @@ function Tomografia(props) {
             aria-describedby="modal-modal-description"
             overflow-y="scroll"
           >
-            <Box sx={style}>
+            <Box className="modaloverflow" sx={style}>
               <div className="botaoPlanoDiv">
                 <button className="botaoPlano" onClick={handleNextImage}>
                   {props.dado.corte[currentIndex]}
@@ -59,11 +58,11 @@ function Tomografia(props) {
               <div className="img-modal">
                 <img src={props.dado.img[currentIndex]} alt="Alguma imagem" />
               </div>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                {props.dado.name}
+              <Typography className="propsname" id="modal-modal-title" variant="h6" component="h2">
+                <b>{props.dado.name}</b>
               </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                {props.dado.texto}
+              <Typography alignJustify id="modal-modal-description" sx={{ mt: 2 }}>
+                <b>Sobre: </b> {props.dado.texto}
               </Typography>
             </Box>
           </Modal>
