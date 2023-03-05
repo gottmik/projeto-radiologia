@@ -2,6 +2,8 @@
   max-width: 390px;
   margin: auto;
   height: 100vh;
+  background-color: #a3a3a41d;
+  
 }
 /* //// HOME */
 .desenvolvidopor{
@@ -14,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   
 }
 
@@ -86,7 +89,7 @@
   min-height: 130px;
   min-width: 130px;
   margin:10px;
-  background-color: rgba(49, 24, 100, 0.761);
+  background-color: rgba(146, 99, 24, 0.9);
   border-radius: 1.3rem;
   color: white!important;
   display: flex;

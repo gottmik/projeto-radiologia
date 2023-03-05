@@ -34,9 +34,9 @@ export default function Modelidades() {
       <Grid centered>
         <Grid.Row columns={1}>
           <Grid.Column centered width={16}>
-            <Link className="dd d1filho" to="/lesoesealteracoes">
+            <Link  to="/lesoesealteracoes">
               <div className="lesoesealteraçoesmod">
-                <Header>
+                <Header style={{color:"rgba(195, 132, 32, 0.9)", fontSize:"1.4rem"}}>
                   Lesões e Alterações<br></br>
                   Anatômicas.
                 </Header>
@@ -106,6 +106,8 @@ export default function Modelidades() {
             marginLeft: "30px",
             paddingBottom: "10px",
             marginBottom: "10px",
+            color:"rgba(195, 132, 32, 0.9)", 
+            fontSize:"1.2rem"
           }}
         >
           Área do Laudador

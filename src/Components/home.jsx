@@ -17,20 +17,20 @@ function Home() {
       <Grid.Row columns={2}>
         <Grid.Column width={10}>
           <div className="desenvolvidopor">
-            <p>
+            <h1 style={{fontSize:"0.9rem"}}>
               Desenvolvido por Marcela Fróes Dentista Implantodontista,
               Radiologista e Aspirante a Programadora.
-            </p>
+            </h1>
           </div>
         </Grid.Column>
-        <Grid.Column width={6} verticalAlign="middle" textAlign="center">
-          <Icon name="instagram" size="huge" />
+        <Grid.Column  width={6} verticalAlign="middle" textAlign="center">
+         <a href="https://www.instagram.com/radiohelpapp/"><Icon style={{fontSize:"2.9rem"}} name="instagram" size="huge" /></a> 
         </Grid.Column>
       </Grid.Row>
       <Grid.Row columns={1} centered verticalAlign="middle">
         <Grid.Column verticalAlign="middle" style={{ height: "60vh" }}>
           <div className="radiohelp">
-            <Header size="huge" dividing textAlign="center">
+            <Header style={{fontSize:"2.3rem", color:"rgba(195, 132, 32, 0.9)"}} size="huge" dividing textAlign="center">
               ¡RadioHelp!
             </Header>
             <Header.Subheader>
