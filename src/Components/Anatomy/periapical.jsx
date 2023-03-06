@@ -35,9 +35,9 @@ function Periapical(props) {
 
   return (
     <>
-      <div className="anatomyComponent" key={props.dado.id}>
-        <div className="anatomyHeader" onClick={onClickHeader}>
-          <Button className="anatomyHeader" onClick={handleOpen}>
+      <div className="anatomyComponentperi" key={props.dado.id}>
+        <div className="anatomyHeaderperi" onClick={onClickHeader}>
+          <Button className="anatomyHeaderperi" onClick={handleOpen}>
             {props.dado.name}
           </Button>
           <Modal

@@ -65,19 +65,18 @@ const PeriapicalPage = () => {
   };
 
   return (
-    <div className="dBody">
-      <div className="Container">
-        <div className="panoramicapesquisar">
-          <TextField
-            onChange={filterOnChange}
-            className="textfield"
-            id="filled-basic"
-            label="Pesquise aqui"
-            variant="filled"
-            size="large"
-          />
-        </div>
-
+    <div className="principaldaperiapical">
+      <div className="lesoesealtpesquisa">
+        <TextField
+          onChange={filterOnChange}
+          className="textfield"
+          id="filled-basic"
+          label="Pesquise aqui"
+          variant="filled"
+          size="large"
+        />
+      </div>
+      <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}
@@ -85,6 +84,7 @@ const PeriapicalPage = () => {
             variant="scrollable"
             scrollButtons="auto"
             aria-label="scrollable auto tabs example"
+            
           >
             <Tab label="Incisivos" {...a11yProps(0)} />
             <Tab label="Caninos" {...a11yProps(1)} />
@@ -93,8 +93,8 @@ const PeriapicalPage = () => {
             <Tab label="Interproximais" {...a11yProps(4)} />
           </Tabs>
         </Box>
-        <div className="panoramica">
-          <TabPanel value={value} index={0}>
+        <div className="periapicalrespostas">
+          <TabPanel className="corrigirwidth"  value={value} index={0}>
             {dados
               .filter((dado) => {
                 return dado.tomada === "Incisivos";
@@ -102,8 +102,8 @@ const PeriapicalPage = () => {
               .map((dado) => (
                 <Periapical dado={dado} key={dado.id} />
               ))}
-          </TabPanel>
-          <TabPanel value={value} index={1}>
+          </TabPanel> 
+          <TabPanel className="corrigirwidth"  value={value} index={1}>
             {dados
               .filter((dado) => {
                 return dado.tomada === "Caninos";
@@ -111,8 +111,8 @@ const PeriapicalPage = () => {
               .map((dado) => (
                 <Periapical dado={dado} />
               ))}
-          </TabPanel>
-          <TabPanel value={value} index={2}>
+          </TabPanel> 
+          <TabPanel className="corrigirwidth"  value={value} index={2}>
             {dados
               .filter((dado) => {
                 return dado.tomada === "Pre-Molares";
@@ -120,8 +120,8 @@ const PeriapicalPage = () => {
               .map((dado) => (
                 <Periapical dado={dado} />
               ))}
-          </TabPanel>
-          <TabPanel value={value} index={3}>
+          </TabPanel> 
+          <TabPanel className="corrigirwidth"  value={value} index={3}>
             {dados
               .filter((dado) => {
                 return dado.tomada === "Molares";
@@ -129,8 +129,8 @@ const PeriapicalPage = () => {
               .map((dado) => (
                 <Periapical dado={dado} />
               ))}
-          </TabPanel>
-          <TabPanel value={value} index={4}>
+          </TabPanel> 
+          <TabPanel className="corrigirwidth"  value={value} index={4}>
             {dados
               .filter((dado) => {
                 return dado.tomada === "Interproximais";
@@ -138,22 +138,16 @@ const PeriapicalPage = () => {
               .map((dado) => (
                 <Periapical dado={dado} />
               ))}
-          </TabPanel>
+          </TabPanel> 
         </div>
-
-        {/* <div className="panoramica">
-          {dados.map((dado) => (
-            <Periapical dado={dado} key={dado.id}/>
-          ))}
-        </div> */}
-        <div className="PanoramicaVoltar">
+        <div className="periapicalbotdiv">
           <Link to="/escolha">
-            <button className="voltarbutton">
+            <button className="voltarbuttonperi">
               <KeyboardBackspaceIcon fontSize="large" />
             </button>
           </Link>
         </div>
-      </div>
+      </Box>
     </div>
   );
 };

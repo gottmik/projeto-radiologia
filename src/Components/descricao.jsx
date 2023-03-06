@@ -6,7 +6,6 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 // import { Lesoes } from "../data-panoramica";
 
 export default function Descricao() {
-
   // const datas = Lesoes ?? []; // PUXANDO O ARRAY DO DATABASE
   // // const [busca, setBusca] = useState('');
 
@@ -17,19 +16,21 @@ export default function Descricao() {
   let bemdelimitada = "bem delimitada";
   let maldelimitada = "difusa";
   let regular = "de margem regular";
-  let irregular = "de mergem irregular";
+  let irregular = "de margem irregular";
   let corticalizada = "com borda corticalizada";
   let parcialcortical = "parcialmente corticalizada";
-  let semcortical = "sem borda corticalizada";
+  
   let hipodenso = "hipodensa";
   let hiperdenso = "hiperdensa";
   let unilocular = "unilocular";
   let multilocular = "multilocular";
-  let misto = "mista"
-  let expansaocortical = "causando expansão das corticais"
-  let expansaoeadelgcortical = "causando expansão e adelgaçamento das corticais"
-  let desloc ="deslocamento dentário"
-  let estendese= "estende-se do(a) ___ até o(a) ___ "
+  let misto = "mista";
+  let expansaocortical = "causando expansão das corticais";
+  let expansaoeadelgcortical =
+    "causando expansão e adelgaçamento das corticais";
+  let desloc = "deslocamento dentário";
+  let reabs = "promovendo reabsorção das raízes dos elementos"
+  let estendese = "estende-se do(a) ___ até o(a) ___ ";
 
   let [valor, setValor] = useState("");
 
@@ -49,254 +50,212 @@ export default function Descricao() {
   }
 
   return (
-    
-      <div className="primeirasectiondesc">
-        <div className="containerdesc">
-          <div className="paragrafodesc">
+    <div className="primeirasectiondesc">
+      <div className="containerdesc">
+        <div className="paragrafodesc">
+          <div style={{marginRight:"10px", padding:"1%", color:"rgba(49, 24, 100, 0.761)"}}><b>Imagem: </b></div>
+          <div style={{width:"100%", height:"100%", backgroundColor:"#a3a3a41d", padding:"1%"}}>
             <p value={valor}>{valor}</p>
           </div>
-          <div className="Container-botoes">
-            <div className="Botoes-pai">
-              <div className="buttonn ">
-                <button
-                  className="buttonnn "
-                  onClick={HandleOnChange}
-                  value={radiolucida}
-                >
-                  Radiolucida
-                </button>
-              </div>
-
-              <div className="buttonn ">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={radiopaca}
-                >
-                  Radiopaca
-                </button>
-              </div>
-              <div className="buttonn">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={misto}
-                >
-                  Mista
-                </button>
-              </div>
-            </div>
-
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={unilocular}
-                >
-                  Unilocular
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={multilocular}
-                >
-                  Multilocular
-                </button>
-              </div>
-            </div>
-
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={bemdelimitada}
-                >
-                  Bem delimitada
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={maldelimitada}
-                >
-                  Mal delimitada
-                </button>
-              </div>
-            </div>
-
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={regular}
-                >
-                  Regular
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={irregular}
-                >
-                  Irregular
-                </button>
-              </div>
-            </div>
-
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={corticalizada}
-                >
-                  Com borda corticalizada
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={semcortical}
-                >
-                  Sem borda corticalizada
-                </button>
-              </div>
-            </div>
-
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hipodenso}
-                >
-                  Hipodenso
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hiperdenso}
-                >
-                  Hiperdenso
-                </button>
-              </div>
-            </div>
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hipodenso}
-                >
-                  Expansão
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hiperdenso}
-                >
-                  Sem Expansão
-                </button>
-              </div>
-            </div>
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hipodenso}
-                >
-                  Com deslocamento dentário
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hiperdenso}
-                >
-                  Sem deslocamento dentpario
-                </button>
-              </div>
-            </div>
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hipodenso}
-                >
-                  Expansão
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hiperdenso}
-                >
-                  Sem Expansão
-                </button>
-              </div>
-            </div>
-            <div className="Botoes-pai">
-              <div className="buttonn btn1">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hipodenso}
-                >
-                  Causando reabsorção radicular
-                </button>
-              </div>
-              <div className="buttonn btn2">
-                <button
-                  className="buttonnn"
-                  onClick={HandleOnChange}
-                  value={hiperdenso}
-                >
-                  Sem causar Reabsorção Radicular
-                </button>
-              </div>
-            </div>
-            
-            
-          </div>
-          <div className="Botoex">
-              <div className="botoess">
-                <button className="copiar" onClick={Zerar}>
-                  ZERAR
-                </button>
-              </div>
-              <div className="botoess">
-                <CopyToClipBoard text={"Imagem: " + Formatar(valor)}>
-                  <button className="copiar">COPIAR</button>
-                </CopyToClipBoard>
-              </div>
-          </div>
-          
         </div>
-        <div className="">
-          <Link to="/escolha">
-            <button className="lesoesvoltarbot">
-              <KeyboardBackspaceIcon fontSize="large" />
+        <div className="Container-botoes">
+          <div className="Botoes-pai">
+            <div className="buttonn ">
+              <button
+                className="buttonnn "
+                onClick={HandleOnChange}
+                value={radiolucida}
+              >
+                Radiolucida
+              </button>
+            </div>
+
+            <div className="buttonn ">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={radiopaca}
+              >
+                Radiopaca
+              </button>
+            </div>
+            <div className="buttonn">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={misto}
+              >
+                Mista
+              </button>
+            </div>
+          </div>
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={hipodenso}
+              >
+                Hipodenso
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={hiperdenso}
+              >
+                Hiperdenso
+              </button>
+            </div>
+          </div>
+
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={unilocular}
+              >
+                Unilocular
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={multilocular}
+              >
+                Multilocular
+              </button>
+            </div>
+          </div>
+
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={bemdelimitada}
+              >
+                Bem delimitada
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={maldelimitada}
+              >
+                Difusa
+              </button>
+            </div>
+          </div>
+
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={regular}
+              >
+                Regular
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={irregular}
+              >
+                Irregular
+              </button>
+            </div>
+          </div>
+
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={corticalizada}
+              >
+                Corticalizada
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={parcialcortical}
+              >
+                Parcialmente corticalizada
+              </button>
+            </div>
+          </div>
+
+          
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={expansaocortical}
+              >
+                Expansão da cortical
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={expansaoeadelgcortical}
+              >
+                Expansão e adelgaçamento
+              </button>
+            </div>
+          </div>
+          <div className="Botoes-pai">
+            <div className="buttonn btn1">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={desloc}
+              >
+                Com deslocamento dentário
+              </button>
+            </div>
+            <div className="buttonn btn2">
+              <button
+                className="buttonnn"
+                onClick={HandleOnChange}
+                value={reabs}
+              >
+              Reabsorção raízes
+              </button>
+            </div>
+          </div>
+          </div>
+        <div className="Botoex">
+          <div className="botoess">
+            <button className="copiar" onClick={Zerar}>
+              ZERAR
             </button>
-          </Link>
-         
+          </div>
+          <div className="botoess">
+            <CopyToClipBoard text={"Imagem: " + Formatar(valor)}>
+              <button className="copiar">COPIAR</button>
+            </CopyToClipBoard>
+          </div>
         </div>
       </div>
-    
+      <div className="">
+        <Link to="/escolha">
+          <button className="lesoesvoltarbot">
+            <KeyboardBackspaceIcon fontSize="large" />
+          </button>
+        </Link>
+      </div>
+    </div>
   );
 }

@@ -356,7 +356,9 @@ a:hover {
   width: 100%;
   height: 40px;
   border: none;
-  background-color: #83631143;
+  background-color: #a3a3a41d;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
   
 }
 
@@ -377,6 +379,12 @@ a:hover {
   width: 300px;
   height: 80px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  overflow-y: scroll;
+  font-size: .8rem;
 }
 
 .Botoex{
@@ -392,11 +400,13 @@ a:hover {
   width: 100%;
   margin: 3px;
   border: none;
+  text-align: center;
 }
 
 .botoess button{
-  width: 100%;
-  height: 40px;
+  width: 80%;
+  height: 30px;
+  font-size: 0.8rem;
   margin-bottom: 30px;
   border-radius: 0.5rem;
   border: none;
@@ -404,3 +414,63 @@ a:hover {
   color: white;
   
 }
+/* 
+
+////PERIAPICAL */
+
+.principaldaperiapical{
+  width: 100%;
+  height: 100vh;
+}
+.periapicalrespostas{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.periapicalbotdiv{
+  width: 100%;
+  height: 45px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.voltarbuttonperi {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+
+}
+.anatomyComponentperi{
+  width: 100%;
+}
+
+.anatomyHeaderperi{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.anatomyHeaderperi button, button a{
+  color: var(--secondary-color)!important;
+  width: 80%;
+  background-color: var(--primary-color);
+  margin: 15px;
+  height: 50px;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--primary-color);
+  color: var(--secondary-color)!important;
+  
+}
+
+.corrigirwidth{
+ width: 100%;
+}
+

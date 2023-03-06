@@ -61,7 +61,7 @@ export default function Modelidades() {
               >
                
                   <motion.div className="item">
-                    <Link  to="/panoramica" >
+                    <Link  to="/panorâmica" >
                     <Image centered  style={{ marginBottom: "10px" }} src={pano1} alt="" />
                     Panoramica
                     </Link>
@@ -69,7 +69,7 @@ export default function Modelidades() {
               
       
                   <motion.div className="item">
-                    <Link to="/panoramica" >
+                    <Link to="/periapical" >
                     <Image centered style={{ marginBottom: "10px" }} src={pano3} alt="" />
                     Periapical
                     </Link>
