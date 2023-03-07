@@ -3,13 +3,10 @@ import React, { useState } from "react";
 import CopyToClipBoard from "react-copy-to-clipboard";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-// import { Lesoes } from "../data-panoramica";
+import { Les } from "../data-panoramica";
 
 export default function Descricao() {
-  // const datas = Lesoes ?? []; // PUXANDO O ARRAY DO DATABASE
-  // // const [busca, setBusca] = useState('');
-
-  // const [dados, setDados] = useState(datas);
+  const datas = Les ?? []; // PUXANDO O ARRAY DO DATABASE
 
   let radiolucida = "radiolucida";
   let radiopaca = "radiopaca";
@@ -19,7 +16,7 @@ export default function Descricao() {
   let irregular = "de margem irregular";
   let corticalizada = "com borda corticalizada";
   let parcialcortical = "parcialmente corticalizada";
-  
+
   let hipodenso = "hipodensa";
   let hiperdenso = "hiperdensa";
   let unilocular = "unilocular";
@@ -29,14 +26,14 @@ export default function Descricao() {
   let expansaoeadelgcortical =
     "causando expansão e adelgaçamento das corticais";
   let desloc = "deslocamento dentário";
-  let reabs = "promovendo reabsorção das raízes dos elementos"
+  let reabs = "promovendo reabsorção das raízes dos elementos";
   let estendese = "estende-se do(a) ___ até o(a) ___ ";
 
   let [valor, setValor] = useState("");
 
   function HandleOnChange(e) {
     setValor((valor += e.target.value + ", "));
-    console.log(setValor);
+    handleBusca();
   }
 
   function Zerar() {
@@ -49,14 +46,90 @@ export default function Descricao() {
     return resultUppercase;
   }
 
+  function stringParaArray(texto) {
+    // Usando a função split() para dividir a string em um array
+    // usando a vírgula como separador
+    let array = texto.split(",");
+
+    // Usando a função map() para remover espaços em branco antes e depois de cada elemento do array
+    array = array.map((elemento) => elemento.trim());
+
+    return array;
+  }
+
+  const array = stringParaArray(valor);
+
+  console.log(array, datas);
+
+  const [resultados, setResultados] = useState([]);
+
+  function compararArrayComObjetos(array, objetos) {
+    const objetosEncontrados = [];
+
+    // Itera sobre cada objeto no array de objetos
+    objetos.forEach((objeto) => {
+      let encontrou = true;
+
+      // Itera sobre cada elemento do array de busca
+      array.forEach((elemento) => {
+        // Verifica se o valor do elemento está presente em alguma propriedade do objeto
+        if (!Object.values(objeto).includes(elemento)) {
+          encontrou = false;
+        }
+      });
+
+      // Se o objeto contém todos os valores do array de busca, adiciona o nome do objeto ao array de resultados
+      if (encontrou) {
+        objetosEncontrados.push(objeto.name);
+      }
+    });
+
+    return objetosEncontrados;
+  }
+
+  function handleBusca() {
+    const objetos = Les;
+
+    const arrayBusca = array;
+
+    const encontrados = compararArrayComObjetos(arrayBusca, objetos);
+    console.log(arrayBusca);
+
+    setResultados(encontrados);
+  }
+
   return (
     <div className="primeirasectiondesc">
       <div className="containerdesc">
+        <div></div>
         <div className="paragrafodesc">
-          <div style={{marginRight:"10px", padding:"1%", color:"rgba(49, 24, 100, 0.761)"}}><b>Imagem: </b></div>
-          <div style={{width:"100%", height:"100%", backgroundColor:"#a3a3a41d", padding:"1%"}}>
+          <div
+            style={{
+              marginRight: "10px",
+              padding: "1%",
+              color: "rgba(49, 24, 100, 0.761)",
+            }}
+          >
+            <b>Imagem: </b>
+          </div>
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              backgroundColor: "#a3a3a41d",
+              padding: "1%",
+            }}
+          >
             <p value={valor}>{valor}</p>
           </div>
+        </div>
+        <div style={{width:"80%", height:"100px"}}>
+          <h6>Possíveis diagnósticos:</h6>
+          {resultados.length > 0 ? (
+            <h6>{resultados.join(", ")}</h6>
+          ) : (
+            <span></span>
+          )}
         </div>
         <div className="Container-botoes">
           <div className="Botoes-pai">
@@ -194,7 +267,6 @@ export default function Descricao() {
             </div>
           </div>
 
-          
           <div className="Botoes-pai">
             <div className="buttonn btn1">
               <button
@@ -231,11 +303,11 @@ export default function Descricao() {
                 onClick={HandleOnChange}
                 value={reabs}
               >
-              Reabsorção raízes
+                Reabsorção raízes
               </button>
             </div>
           </div>
-          </div>
+        </div>
         <div className="Botoex">
           <div className="botoess">
             <button className="copiar" onClick={Zerar}>

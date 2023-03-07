@@ -720,12 +720,12 @@ export const PeriapicalDados = [
   },
 ];
 
-export const Lesoes = [
+export const Les = [
   {
     id:0,
     name: "Cisto Radicular",
-    densidade: "Radiolúcido/Hipodenso",
-    locular: "Unilocular",
+    densidade: "radiolucida",
+    locular: "unilocular",
     margem: "Regular",
     definição: "Bem definida",
     cortical: "sim",
@@ -733,12 +733,13 @@ export const Lesoes = [
     deslocamentodedentes:"não",
     reabsorçãoradicular:"sim",
     dentenirrompido: "sim",
+    teste:"",
   },
   {
     id:1,
     name: "Ameloblastoma Sólido",
-    densidade: "Radiolúcido/Hipodenso",
-    locular: "Multilocular",
+    densidade: "radiolucida",
+    locular: "multilocular",
     margem: "Irregular",
     definição: "Bem definida",
     cortical: "sim",
@@ -746,11 +747,12 @@ export const Lesoes = [
     deslocamentodedentes:"sim",
     reabsorçãoradicular:"sim",
     dentenirrompido: "sim",
+    teste:"",
   },
   {
     id:2,
     name: "Ameloblastoma Unicístico",
-    densidade: "Radiolúcido/Hipodenso",
+    densidade: "radiolúcido",
     locular: "Unilocular",
     margem: "Regular",
     definição: "Bem definida",
@@ -759,11 +761,12 @@ export const Lesoes = [
     deslocamentodedentes:"sim",
     reabsorçãoradicular:"sim",
     dentenirrompido: "sim",
+    teste:"",
   },
   {
     id:3,
     name: "Tumor Odontogênico Queratocístico",
-    densidade: "Radiolúcido/Hipodenso",
+    densidade: "radiolucida",
     locular: "Unilocular",
     margem: "Irregular",
     definição: "Bem definida",
@@ -772,6 +775,7 @@ export const Lesoes = [
     deslocamentodedentes:"não",
     reabsorçãoradicular:"não",
     dentenirrompido: "não",
+    teste:"",
   },
   {
     id:4,
@@ -785,6 +789,7 @@ export const Lesoes = [
     deslocamentodedentes:"sim",
     reabsorçãoradicular:"sim",
     dentenirrompido: "",
+    teste:"",
   },
   {
     id:5,
@@ -798,6 +803,7 @@ export const Lesoes = [
     deslocamentodedentes:"sim",
     reabsorçãoradicular:"sim",
     dentenirrompido: "sim",
+    teste:"",
   },
 
   {
@@ -896,8 +902,8 @@ export const Lesoes = [
   {
     id:13,
     name: "Cisto Odontogênico Glandular",
-    densidade: "Hipodenso",
-    locular: "Unilocular",
+    densidade: "hipodensa",
+    locular: "unilocular",
     margem: "Regular",
     definição: "Bem definida",
     cortical: "não",
