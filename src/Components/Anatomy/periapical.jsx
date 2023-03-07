@@ -48,7 +48,7 @@ function Periapical(props) {
             overflow-y="scroll"
           >
             <Box className="modaloverflow" sx={style}>
-              <div className="img-modal">
+              <div className="img-modal-pre">
                 <img
                   onClick={mudarEstado}
                   src={state ? props.dado.imgg : props.dado.img}

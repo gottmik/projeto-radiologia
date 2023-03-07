@@ -46,6 +46,37 @@ import espinhanasalanteriorperiapical from "./Img/espinhanasalanteriorperiapical
 import espinhanasalanteriorrperiapical from "./Img/espinhanasalanteriorrperiapical.jpg";
 import extensaoalveolardoseiomolar from "./Img/extensaoalveolardoseiomolar.jpg";
 import extensaoalveolardoseiomolarr from "./Img/extensaoalveolardoseiomolarr.jpg";
+import suturapalatinainci from "./Img/suturapalatina.jpg"
+import suturapalatinaincii from "./Img/suturapalatinaa.jpg"
+import torusmandibularinci from "./Img/torusmandibular.jpg"
+import torusmandibularincii from "./Img/torusmandibularr.jpg"
+import yinvetidodeenniscani from "./Img/yinvertidodeennis.jpg"
+import yinvetidodeenniscanii from "./Img/yinvertidodeenniss.jpg"
+import tuberdamaxilamola from "./Img/tuberdamaxila.jpg"
+import tuberdamaxilamolaa from "./Img/tuberdamaxilaa.jpg"
+import septosinusalmola from "./Img/septosinusal.jpg"
+import septosinusalmolaa from "./Img/septosinusall.jpg"
+import seiomaxilarpre from "./Img/seiomaxilar.jpg"
+import seiomaxilarpree from "./Img/seiomaxilarr.jpg"
+import protuberanciamentualinci from "./Img/protuberanciamentual.jpg"
+import protuberanciamentualincii from "./Img/protuberanciamentuall.jpg"
+import parededoforameincisivoinci from "./Img/paredesdocanalincisivo.jpg"
+import parededoforameincisivoincii from "./Img/paredesdocanalincisivoo.jpg"
+import ossozigomaticopre from "./Img/ossozigomaticopre.jpg"
+import ossozigomaticopree from "./Img/ossozigomaticopree.jpg"
+import hamulopterigoideo from "./Img/hamulopterigoideo.jpg"
+import hamulopterigoideoo from "./Img/hamulopterigoideoo.jpg"
+import fossasnasaisinci from "./Img/fossasnasais.jpg"
+import fossasnasaisincii from "./Img/fossasnasaiss.jpg"
+import fossacaninacani from "./Img/fossacanina.jpg"
+import fossacaninacanii from "./Img/fossacaninaa.jpg"
+import foramementualcani from "./Img/foramementuall.jpg"
+import foramementualcanii from "./Img/foramementuall.jpg"
+import foraminalingualinci from "./Img/foraminalingual.jpg"
+import foraminalingualincii from "./Img/foraminalinguall.jpg"
+import extensaoalveolarnotuber from "./Img/extensaoalveolarnotuber.jpg"
+import extensaoalveolarnotuberr from "./Img/extensaoalveolarnotuberr.jpg"
+
 // import basedamandibulaperiapical from "./Img/basedamandibulaperiapical.jpg";
 //TOMOGRAFIAS
 import processocoronoidedamandibulaaxiall from "./Img/processocoronoidedamandibulaaxiall.jpg";
@@ -133,7 +164,7 @@ export const PanoramicaDados = [
     img: basedamandibula,
     imgg: basedamandibulaa,
     texto:
-      "Normalmente cortical bem espessa, facil de identificar em qualquer corte e tomara radiologica",
+      "Normalmente cortical bem espessa, facil de identificar em qualquer corte e tomada radiográfica.",
     corte: "Panoramico",
     info: "",
   },
@@ -522,7 +553,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivos",
+    tomada: "Molares",
   },
 
   {
@@ -533,7 +564,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Pre-Molares",
+    tomada: "Caninos",
   },
   {
     id: 4,
@@ -543,7 +574,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Pre-Molares",
+    tomada: "Caninos",
   },
   {
     id: 5,
@@ -553,7 +584,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Caninos",
+    tomada: "Incisivos",
   },
   {
     id: 6,
@@ -563,7 +594,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Molares",
+    tomada: "Incisivos",
   },
 
   {
@@ -574,7 +605,7 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Molares",
+    tomada: "Pre-Molares",
   },
   {
     id: 1,
@@ -584,7 +615,108 @@ export const PeriapicalDados = [
     texto: "Facil de identificar em qualquer corte e tomara radiologica",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
-    tomada: "Incisivo",
+    tomada: "Incisivos",
+  },
+ 
+  {
+    id: 21,
+    name: "Sutura Palatina",
+    img: suturapalatinainci,
+    imgg: suturapalatinaincii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Incisivos",
+  },
+  {
+    id: 31,
+    name: "Torus Mandibular",
+    img: torusmandibularinci,
+    imgg: torusmandibularincii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Incisivos",
+  },
+  {
+    id: 41,
+    name: "Y invertido de Ennis",
+    img: yinvetidodeenniscani,
+    imgg: yinvetidodeenniscanii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Caninos",
+  },
+  {
+    id: 51,
+    name: "Tuberosidade Maxilar",
+    img: tuberdamaxilamola,
+    imgg: tuberdamaxilamolaa,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Molares",
+  },
+  {
+    id: 61,
+    name: "Septo Sinusal",
+    img: septosinusalmola,
+    imgg: septosinusalmolaa,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Molares",
+  },
+  {
+    id: 71,
+    name: "Seio Maxilar",
+    img: seiomaxilarpre,
+    imgg: seiomaxilarpree,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Pre-Molares",
+  },
+  {
+    id: 81,
+    name: "Protuberância Mental",
+    img: protuberanciamentualinci,
+    imgg: protuberanciamentualincii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Incisivos",
+  },
+  {
+    id: 91,
+    name: "Canal Incisivo",
+    img: parededoforameincisivoinci,
+    imgg: parededoforameincisivoincii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Incisivos",
+  },
+  {
+    id: 10,
+    name: "Osso Zigomático",
+    img: ossozigomaticopre,
+    imgg: ossozigomaticopree,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Pre-Molares",
+  },
+  {
+    id: 11,
+    name: "Hamulo Pterigóideo",
+    img: hamulopterigoideo,
+    imgg: hamulopterigoideoo,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Molares",
   },
 ];
 

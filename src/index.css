@@ -186,6 +186,24 @@ a:hover {
   
 }
 
+.img-modal-pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 320px;
+  background-color: #9d9d9e44;
+  margin-bottom: 20px;
+}
+
+.img-modal-pre img {
+  width: 220px !important;
+  
+  
+}
+
+
 /* ///////////// lesoes e alteraçoes */
 .principaldalesoesealt {
   max-width: 390px;
