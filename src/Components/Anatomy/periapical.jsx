@@ -3,6 +3,7 @@ import React from "react";
 import "../../index.css"
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
+import { Message } from "semantic-ui-react";
 
 function Periapical(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +49,18 @@ function Periapical(props) {
             overflow-y="scroll"
           >
             <Box className="modaloverflow" sx={style}>
+            <div>
+                
+                <Message
+                  size="tiny"
+                  
+                  as={"div"}
+                  style={{ margin: "5px" }}
+                >
+                  Clique na imagem para revelar a estrutura!
+                </Message>
+              
+            </div>
               <div className="img-modal-pre">
                 <img
                   onClick={mudarEstado}

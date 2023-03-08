@@ -1,8 +1,9 @@
 import React from "react";
 //// CSS
-import "../../index.css"
+import "../../index.css";
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
+
 
 function Tomografia(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,10 @@ function Tomografia(props) {
   let [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNextImage = () => {
-    setCurrentIndex((currentIndex + 1) % props.dado.corte.length && (currentIndex + 1) % props.dado.img.length);
+    setCurrentIndex(
+      (currentIndex + 1) % props.dado.corte.length &&
+        (currentIndex + 1) % props.dado.img.length
+    );
   };
 
   return (
@@ -55,13 +59,23 @@ function Tomografia(props) {
                   {props.dado.corte[currentIndex]}
                 </button>
               </div>
+              <div></div>
               <div className="img-modal">
                 <img src={props.dado.img[currentIndex]} alt="Alguma imagem" />
               </div>
-              <Typography className="propsname" id="modal-modal-title" variant="h6" component="h2">
+              <Typography
+                className="propsname"
+                id="modal-modal-title"
+                variant="h6"
+                component="h2"
+              >
                 <b>{props.dado.name}</b>
               </Typography>
-              <Typography alignJustify id="modal-modal-description" sx={{ mt: 2 }}>
+              <Typography
+                alignJustify
+                id="modal-modal-description"
+                sx={{ mt: 2 }}
+              >
                 <b>Sobre: </b> {props.dado.texto}
               </Typography>
             </Box>

@@ -6,6 +6,7 @@ import Panoramica from "./panoramica";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Message } from "semantic-ui-react";
 
 const PanoramicaPage = () => {
   const datas = PanoramicaDados ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -22,8 +23,14 @@ const PanoramicaPage = () => {
     setDados(updatedList);
   };
 
+
+
+
+
   return (
     <div className="principaldalesoesealt">
+      
+      
       <div className="lesoesealtpesquisa">
         <TextField
           onChange={filterOnChange}
@@ -34,6 +41,7 @@ const PanoramicaPage = () => {
           size="large"
         />
       </div>
+      
 
       <div className="lesoesealtrespostas">
         {dados.map((dado) => (

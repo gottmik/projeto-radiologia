@@ -46,36 +46,36 @@ import espinhanasalanteriorperiapical from "./Img/espinhanasalanteriorperiapical
 import espinhanasalanteriorrperiapical from "./Img/espinhanasalanteriorrperiapical.jpg";
 import extensaoalveolardoseiomolar from "./Img/extensaoalveolardoseiomolar.jpg";
 import extensaoalveolardoseiomolarr from "./Img/extensaoalveolardoseiomolarr.jpg";
-import suturapalatinainci from "./Img/suturapalatina.jpg"
-import suturapalatinaincii from "./Img/suturapalatinaa.jpg"
-import torusmandibularinci from "./Img/torusmandibular.jpg"
-import torusmandibularincii from "./Img/torusmandibularr.jpg"
-import yinvetidodeenniscani from "./Img/yinvertidodeennis.jpg"
-import yinvetidodeenniscanii from "./Img/yinvertidodeenniss.jpg"
-import tuberdamaxilamola from "./Img/tuberdamaxila.jpg"
-import tuberdamaxilamolaa from "./Img/tuberdamaxilaa.jpg"
-import septosinusalmola from "./Img/septosinusal.jpg"
-import septosinusalmolaa from "./Img/septosinusall.jpg"
-import seiomaxilarpre from "./Img/seiomaxilar.jpg"
-import seiomaxilarpree from "./Img/seiomaxilarr.jpg"
-import protuberanciamentualinci from "./Img/protuberanciamentual.jpg"
-import protuberanciamentualincii from "./Img/protuberanciamentuall.jpg"
-import parededoforameincisivoinci from "./Img/paredesdocanalincisivo.jpg"
-import parededoforameincisivoincii from "./Img/paredesdocanalincisivoo.jpg"
-import ossozigomaticopre from "./Img/ossozigomaticopre.jpg"
-import ossozigomaticopree from "./Img/ossozigomaticopree.jpg"
-import hamulopterigoideo from "./Img/hamulopterigoideo.jpg"
-import hamulopterigoideoo from "./Img/hamulopterigoideoo.jpg"
-import fossasnasaisinci from "./Img/fossasnasais.jpg"
-import fossasnasaisincii from "./Img/fossasnasaiss.jpg"
-import fossacaninacani from "./Img/fossacanina.jpg"
-import fossacaninacanii from "./Img/fossacaninaa.jpg"
-import foramementualcani from "./Img/foramementuall.jpg"
-import foramementualcanii from "./Img/foramementuall.jpg"
-import foraminalingualinci from "./Img/foraminalingual.jpg"
-import foraminalingualincii from "./Img/foraminalinguall.jpg"
-import extensaoalveolarnotuber from "./Img/extensaoalveolarnotuber.jpg"
-import extensaoalveolarnotuberr from "./Img/extensaoalveolarnotuberr.jpg"
+import suturapalatinainci from "./Img/suturapalatina.jpg";
+import suturapalatinaincii from "./Img/suturapalatinaa.jpg";
+import torusmandibularinci from "./Img/torusmandibular.jpg";
+import torusmandibularincii from "./Img/torusmandibularr.jpg";
+import yinvetidodeenniscani from "./Img/yinvertidodeennis.jpg";
+import yinvetidodeenniscanii from "./Img/yinvertidodeenniss.jpg";
+import tuberdamaxilamola from "./Img/tuberdamaxila.jpg";
+import tuberdamaxilamolaa from "./Img/tuberdamaxilaa.jpg";
+import septosinusalmola from "./Img/septosinusal.jpg";
+import septosinusalmolaa from "./Img/septosinusall.jpg";
+import seiomaxilarpre from "./Img/seiomaxilar.jpg";
+import seiomaxilarpree from "./Img/seiomaxilarr.jpg";
+import protuberanciamentualinci from "./Img/protuberanciamentual.jpg";
+import protuberanciamentualincii from "./Img/protuberanciamentuall.jpg";
+import parededoforameincisivoinci from "./Img/paredesdocanalincisivo.jpg";
+import parededoforameincisivoincii from "./Img/paredesdocanalincisivoo.jpg";
+import ossozigomaticopre from "./Img/ossozigomaticopre.jpg";
+import ossozigomaticopree from "./Img/ossozigomaticopree.jpg";
+import hamulopterigoideo from "./Img/hamulopterigoideo.jpg";
+import hamulopterigoideoo from "./Img/hamulopterigoideoo.jpg";
+import fossasnasaisinci from "./Img/fossasnasais.jpg";
+import fossasnasaisincii from "./Img/fossasnasaiss.jpg";
+import fossacaninacani from "./Img/fossacanina.jpg";
+import fossacaninacanii from "./Img/fossacaninaa.jpg";
+import foramementualcani from "./Img/foramementuall.jpg";
+import foramementualcanii from "./Img/foramementuall.jpg";
+import foraminalingualinci from "./Img/foraminalingual.jpg";
+import foraminalingualincii from "./Img/foraminalinguall.jpg";
+import extensaoalveolarnotuber from "./Img/extensaoalveolarnotuber.jpg";
+import extensaoalveolarnotuberr from "./Img/extensaoalveolarnotuberr.jpg";
 
 // import basedamandibulaperiapical from "./Img/basedamandibulaperiapical.jpg";
 //TOMOGRAFIAS
@@ -135,6 +135,8 @@ import foramemandibularsagitaltomo from "./Img/foramemandibularsagitaltomo.jpg";
 import foraminalingualaxialtomo from "./Img/foraminalingualaxialtomo.jpg";
 import foraminalingualcoronaltomo from "./Img/foraminalingualcoronaltomo.jpg";
 import foraminalingualsagitaltomo from "./Img/foraminalingualsagitaltomo.jpg";
+import imfdamandibula from "./Img/imfdamandibula.jpg";
+import imfdamandibulaa from "./Img/imfdamandibulaa.jpg";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////PANORAMICAS
 export const PanoramicaDados = [
@@ -150,7 +152,7 @@ export const PanoramicaDados = [
   },
   {
     id: 8,
-    name: "Arco Zigomatico",
+    name: "Arco Zigomático",
     img: arcozigomatico,
     imgg: arcozigomaticoo,
     texto:
@@ -160,11 +162,11 @@ export const PanoramicaDados = [
   },
   {
     id: 2,
-    name: "Base da Mandibula",
+    name: "Base da Mandíbula",
     img: basedamandibula,
     imgg: basedamandibulaa,
     texto:
-      "Normalmente cortical bem espessa, facil de identificar em qualquer corte e tomada radiográfica.",
+      "A base da mandíbula é uma estrutura óssea importante da face, localizada na região inferior da mandíbula, que tem como principal função sustentar os dentes inferiores e assegurar a integridade da articulação temporomandibular (ATM).",
     corte: "Panoramico",
     info: "",
   },
@@ -174,7 +176,7 @@ export const PanoramicaDados = [
     img: canalmandibular,
     imgg: canalmandibularr,
     texto:
-      "O canal mandibular é um canal ósseo localizado na mandíbula, que abriga o nervo alveolar inferior, responsável por transmitir a sensibilidade dos dentes inferiores e do queixo. ",
+      "O canal mandibular é um canal ósseo localizado na mandíbula, que abriga o nervo alveolar inferior, responsável por transmitir a sensibilidade dos dentes inferiores e mento. ",
     corte: "",
     info: "",
   },
@@ -185,6 +187,7 @@ export const PanoramicaDados = [
     imgg: conchainferiorr,
     texto:
       "A concha inferior é uma estrutura óssea curva e fina localizada no interior do osso maxilar inferior, que ajuda a dar forma e sustentação à mandíbula. Ela também pode ser chamada de lâmina dura e aparece nas radiografias panorâmicas como uma linha curva que acompanha a base dos dentes inferiores. ",
+
     corte: "",
     info: "",
   },
@@ -215,7 +218,7 @@ export const PanoramicaDados = [
     img: fissurapterigomaxilar,
     imgg: fissurapterigomaxilarr,
     texto:
-      "Os nervos alveolares posterior e superior passam pela fissura pterigomandibular, que continua para a fossa infratemporal",
+      "Os nervos alveolares posterior e superior passam pela fissura pterigomandibular, que continuam para a fossa infratemporal",
     corte: "Panoramico",
     info: "",
   },
@@ -225,7 +228,7 @@ export const PanoramicaDados = [
     img: fossamandibular,
     imgg: fossamandibularr,
     texto:
-      "A fossa Mandibular e uma dos 5 principais estruturas que formam a ATM, juntamente com o disco articular, capsula articular, cabeca da mandibula, ligamentos adjacentes",
+      "A fossa Mandibular é uma dos 5 principais estruturas que formam a ATM, juntamente com o disco articular, capsula articular, cabeca da mandibula, ligamentos adjacentes",
     corte: "Panoramico",
     info: "",
   },
@@ -236,7 +239,7 @@ export const PanoramicaDados = [
     img: foramemandibular,
     imgg: foramemandibularr,
     texto:
-      "O forame mandibular é uma abertura óssea localizada na mandíbula que permite a passagem do nervo alveolar inferior e dos vasos sanguíneos responsáveis pela irrigação da mandíbula. É visto nas radiografias panorâmicas como uma estrutura radiopaca circular ou oval, e é importante para a avaliação da anatomia da mandíbula e para a realização de procedimentos odontológicos nessa região. ",
+      "O forame mandibular é uma abertura óssea localizada na mandíbula que permite a passagem do nervo alveolar inferior e dos vasos sanguíneos responsáveis pela irrigação da mandíbula. É visto nas radiografias panorâmicas como uma estrutura radiopaca circular ou oval. ",
     corte: "",
     info: "",
   },
@@ -246,7 +249,7 @@ export const PanoramicaDados = [
     img: foramementoniano,
     imgg: foramementonianoo,
     texto:
-      "O forame mentoniano é uma abertura óssea localizada na mandíbula, na região do queixo, que permite a passagem do nervo mentoniano. É visto nas radiografias panorâmicas como uma estrutura radiopaca circular ou oval, abaixo dos dentes incisivos inferiores, e é importante para a avaliação da anatomia da mandíbula e para a realização de procedimentos odontológicos nessa região. ",
+      "O forame mentoniano é uma abertura óssea localizada na mandíbula, na região do mento, que permite a passagem do nervo mentoniano. ",
     corte: "",
     info: "",
   },
@@ -256,17 +259,28 @@ export const PanoramicaDados = [
     img: fossamandibular,
     imgg: fossamandibularr,
     texto:
-      "A fossa mandibular é uma depressão óssea localizada na base do crânio, na região da mandíbula. Ela é uma articulação que conecta a mandíbula com o crânio, permitindo a abertura e o fechamento da boca e a realização dos movimentos da mandíbula. Na radiologia odontológica, a fossa mandibular pode ser vista nas radiografias panorâmicas como uma área radiolúcida na base do crânio. Ela é importante para a avaliação da anatomia da mandíbula e para a realização de procedimentos odontológicos nessa região. ",
+      "A fossa mandibular é uma depressão óssea localizada na base do crânio, na região da mandíbula. Ela é uma articulação que conecta a mandíbula com o crânio, permitindo a abertura e o fechamento da boca e a realização dos movimentos da mandíbula. Na radiologia odontológica, a fossa mandibular pode ser vista nas radiografias panorâmicas como uma área radiolúcida na base do crânio. Ela é importante para a avaliação da anatomia da mandíbula. ",
     corte: "",
     info: "",
   },
   {
+
     id: 7,
     name: "Imagem Fantasma do Palato duro",
     img: imagemfantasmapd,
     imgg: imagemfantasmapdd,
     texto:
       "A imagem fantasma do palato duro é uma duplicidade de imagem na radiografia panorâmica causada pela reflexão da radiação absorvida pelo osso do palato duro. Para minimizar esse efeito, é recomendado que o paciente pressione a língua contra o palato durante a tomada da radiografia. ",
+    corte: "Panoramico",
+    info: "",
+  },
+  {
+    id: 72,
+    name: "Imagem Fantasma da mandíbula",
+    img: imfdamandibula,
+    imgg: imfdamandibulaa,
+    texto:
+      "A imagem fantasma é uma artefato radiográfico que pode ocorrer em radiografias panorâmicas. A sobreposição pode criar uma imagem secundária (fantasma) da estrutura, deslocada em relação à posição original. A imagem fantasma pode causar confusão no diagnóstico radiológico e prejudicar a interpretação das imagens.",
     corte: "Panoramico",
     info: "",
   },
@@ -395,7 +409,8 @@ export const Tomografias = [
       canaldohipoglossocoronaltomo,
       canaldohipoglossosagitaltomo,
     ],
-    texto: "Localizado nas margens do forame magno. é uma passagem curta e frequentemente bipartida que permanece oculta acima da parte anterior de cada côndilo do occiptal.",
+    texto:
+      "Localizado nas margens do forame magno. é uma passagem curta e frequentemente bipartida que permanece oculta acima da parte anterior de cada côndilo do occiptal.",
     corte: ["Axial", "Coronal", "Sagital"],
     info: "",
   },
@@ -550,7 +565,8 @@ export const PeriapicalDados = [
     name: "Arco Zigomático",
     img: arcozigomaticomolar,
     imgg: arcozigomaticomolarr,
-    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    texto:
+      "O arco zigomático é uma estrutura óssea que faz parte da face humana, localizado na região lateral e superior da cavidade ocular. É formado pela união do processo temporal do osso temporal e do processo zigomático do osso da face, e tem como principal função a proteção do globo ocular e dos músculos envolvidos nos movimentos da mandíbula. ",
     corte: "Periapical",
     info: "Facil de identificar em qualquer corte e tomara radiologica",
     tomada: "Molares",
@@ -577,6 +593,16 @@ export const PeriapicalDados = [
     tomada: "Caninos",
   },
   {
+    id: 91,
+    name: "Parede do forame Incisivo",
+    img: parededoforameincisivoinci,
+    imgg: parededoforameincisivoincii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Incisivos",
+  },
+  {
     id: 5,
     name: "Concha Nasal Inferior",
     img: conchanasalinferior,
@@ -596,6 +622,17 @@ export const PeriapicalDados = [
     info: "Facil de identificar em qualquer corte e tomara radiologica",
     tomada: "Incisivos",
   },
+  {
+    id: 410,
+    name: "Extensão Alveolar do Canal Mandibular",
+    img: extensaoalveolarnotuber,
+    imgg: extensaoalveolarnotuberr,
+    texto:
+      "A extensão alveolar do canal mandibular é uma projeção do canal mandibular na região posterior dos molares inferiores.",
+    corte: "Panorâmico",
+    info: "É importante observar a extensão alveolar do canal mandibular em exames radiográficos para a identificação de possíveis patologias ou complicações durante procedimentos odontológicos.",
+    tomada: "Molares",
+  },
 
   {
     id: 7,
@@ -608,35 +645,59 @@ export const PeriapicalDados = [
     tomada: "Pre-Molares",
   },
   {
-    id: 1,
-    name: "Septo Nasal",
-    img: septonasal,
-    imgg: septonasall,
-    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    id: 110,
+    name: "Fossa Canina",
+    img: fossacaninacani,
+    imgg: fossacaninacanii,
+    texto:
+      "A fossa canina é uma estrutura radiopaca presente na região canina dos maxilares, entre o incisivo lateral e o primeiro pré-molar.",
     corte: "Periapical",
-    info: "Facil de identificar em qualquer corte e tomara radiologica",
+    info: "É importante observar a fossa canina em exames radiográficos para a identificação de possíveis patologias.",
+    tomada: "Caninos",
+  },
+  {
+    id: 210,
+    name: "Forame Mental",
+    img: foramementualcani,
+    imgg: foramementualcanii,
+    texto:
+      "O forame mental é uma abertura presente na região do mento, abaixo do segundo pré-molar inferior.",
+    corte: "Panorâmico",
+    info: "É importante observar o forame mental em exames radiográficos para a identificação de possíveis patologias ou complicações durante procedimentos odontológicos.",
+    tomada: "Caninos",
+  },
+  {
+    id: 310,
+    name: "Forame Incisivo",
+    img: foraminalingualinci,
+    imgg: foraminalingualincii,
+    texto:
+      "O forame incisivo é uma abertura presente na região anterior do palato duro.",
+    corte: "Periapical",
+    info: "É importante observar o forame incisivo em exames radiográficos para a identificação de possíveis patologias ou complicações durante procedimentos odontológicos.",
     tomada: "Incisivos",
   },
- 
+
   {
-    id: 21,
-    name: "Sutura Palatina",
-    img: suturapalatinainci,
-    imgg: suturapalatinaincii,
+    id: 2102,
+    name: "Fossas Nasais",
+    img: fossasnasaisinci,
+    imgg: fossasnasaisincii,
+    texto:
+      "As fossas nasais são estruturas presentes na região nasal, sendo importante observá-las em exames radiográficos da região maxilofacial.",
+    corte: "Panorâmico",
+    info: "As fossas nasais são importantes para a respiração e para o olfato, podendo ser afetadas por diversas patologias.",
+    tomada: "Incisivos",
+  },
+  {
+    id: 11,
+    name: "Hamulo Pterigóideo",
+    img: hamulopterigoideo,
+    imgg: hamulopterigoideoo,
     texto: "",
     corte: "Periapical",
     info: "",
-    tomada: "Incisivos",
-  },
-  {
-    id: 31,
-    name: "Torus Mandibular",
-    img: torusmandibularinci,
-    imgg: torusmandibularincii,
-    texto: "",
-    corte: "Periapical",
-    info: "",
-    tomada: "Incisivos",
+    tomada: "Molares",
   },
   {
     id: 41,
@@ -648,16 +709,28 @@ export const PeriapicalDados = [
     info: "",
     tomada: "Caninos",
   },
+
   {
-    id: 51,
-    name: "Tuberosidade Maxilar",
-    img: tuberdamaxilamola,
-    imgg: tuberdamaxilamolaa,
+    id: 158,
+    name: "Osso Zigomático",
+    img: ossozigomaticopre,
+    imgg: ossozigomaticopree,
     texto: "",
     corte: "Periapical",
     info: "",
-    tomada: "Molares",
+    tomada: "Pre-Molares",
   },
+  {
+    id: 81,
+    name: "Protuberância Mental",
+    img: protuberanciamentualinci,
+    imgg: protuberanciamentualincii,
+    texto: "",
+    corte: "Periapical",
+    info: "",
+    tomada: "Incisivos",
+  },
+
   {
     id: 61,
     name: "Septo Sinusal",
@@ -678,41 +751,44 @@ export const PeriapicalDados = [
     info: "",
     tomada: "Pre-Molares",
   },
+
   {
-    id: 81,
-    name: "Protuberância Mental",
-    img: protuberanciamentualinci,
-    imgg: protuberanciamentualincii,
+    id: 21,
+    name: "Sutura Palatina",
+    img: suturapalatinainci,
+    imgg: suturapalatinaincii,
     texto: "",
     corte: "Periapical",
     info: "",
     tomada: "Incisivos",
   },
+
   {
-    id: 91,
-    name: "Canal Incisivo",
-    img: parededoforameincisivoinci,
-    imgg: parededoforameincisivoincii,
+    id: 18782,
+    name: "Septo Nasal",
+    img: septonasal,
+    imgg: septonasall,
+    texto: "Facil de identificar em qualquer corte e tomara radiologica",
+    corte: "Periapical",
+    info: "Facil de identificar em qualquer corte e tomara radiologica",
+    tomada: "Incisivos",
+  },
+  {
+    id: 3121,
+    name: "Torus Mandibular",
+    img: torusmandibularinci,
+    imgg: torusmandibularincii,
     texto: "",
     corte: "Periapical",
     info: "",
     tomada: "Incisivos",
   },
+
   {
-    id: 10,
-    name: "Osso Zigomático",
-    img: ossozigomaticopre,
-    imgg: ossozigomaticopree,
-    texto: "",
-    corte: "Periapical",
-    info: "",
-    tomada: "Pre-Molares",
-  },
-  {
-    id: 11,
-    name: "Hamulo Pterigóideo",
-    img: hamulopterigoideo,
-    imgg: hamulopterigoideoo,
+    id: 5311,
+    name: "Tuberosidade Maxilar",
+    img: tuberdamaxilamola,
+    imgg: tuberdamaxilamolaa,
     texto: "",
     corte: "Periapical",
     info: "",
@@ -722,7 +798,7 @@ export const PeriapicalDados = [
 
 export const Les = [
   {
-    id:0,
+    id: 0,
     name: "Cisto Radicular",
     densidade: "radiolucida",
     locular: "unilocular",
@@ -730,13 +806,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "não",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "sim",
-    teste:"",
+    teste: "",
   },
   {
-    id:1,
+    id: 1,
     name: "Ameloblastoma Sólido",
     densidade: "radiolucida",
     locular: "multilocular",
@@ -744,13 +820,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "sim",
-    teste:"",
+    teste: "",
   },
   {
-    id:2,
+    id: 2,
     name: "Ameloblastoma Unicístico",
     densidade: "radiolúcido",
     locular: "Unilocular",
@@ -758,13 +834,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "sim",
-    teste:"",
+    teste: "",
   },
   {
-    id:3,
+    id: 3,
     name: "Tumor Odontogênico Queratocístico",
     densidade: "radiolucida",
     locular: "Unilocular",
@@ -772,13 +848,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "não",
     dentenirrompido: "não",
-    teste:"",
+    teste: "",
   },
   {
-    id:4,
+    id: 4,
     name: "Tumor Odontogênico Epitelial Calcificante",
     densidade: "Misto",
     locular: "Multilocular",
@@ -786,13 +862,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "",
-    teste:"",
+    teste: "",
   },
   {
-    id:5,
+    id: 5,
     name: "Tumor Odontogênico Adenomatoide",
     densidade: "Misto",
     locular: "Unilocular",
@@ -800,14 +876,14 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "sim",
-    teste:"",
+    teste: "",
   },
 
   {
-    id:6,
+    id: 6,
     name: "Mixoma Odontogênico",
     densidade: "Radiopaco/Hipodenso",
     locular: "Multilocular",
@@ -815,12 +891,12 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "não",
     dentenirrompido: "sim",
   },
   {
-    id:7,
+    id: 7,
     name: "Cementoblastoma",
     densidade: "Radiopaco/Hiperdenso",
     locular: "Unilocular",
@@ -828,25 +904,25 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "não",
   },
   {
-    id:8,
+    id: 8,
     name: "Fibroma Ameloblastico",
-    densidade: ["Misto","Hiperdenso"],
+    densidade: ["Misto", "Hiperdenso"],
     locular: "Unilocular",
     margem: "Regular",
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "não",
     dentenirrompido: "sim",
   },
   {
-    id:9,
+    id: 9,
     name: "Odontoma Composto",
     densidade: "Hiperdenso",
     locular: "Unilocular",
@@ -854,12 +930,12 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "não",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "não",
     dentenirrompido: "sim",
   },
   {
-    id:10,
+    id: 10,
     name: "Odontoma Complexo",
     densidade: "Hipersendo",
     locular: "Unilocular",
@@ -867,13 +943,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "não",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "não",
     dentenirrompido: "sim",
   },
 
   {
-    id:11,
+    id: 11,
     name: "Tumor Odontogênico Cistico Calcificante",
     densidade: "Misto",
     locular: "Unilocular",
@@ -881,12 +957,12 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "não",
   },
   {
-    id:12,
+    id: 12,
     name: "Cisto Dentígero",
     densidade: "Hipodenso",
     locular: "Unilocular",
@@ -894,13 +970,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "sim",
   },
 
   {
-    id:13,
+    id: 13,
     name: "Cisto Odontogênico Glandular",
     densidade: "hipodensa",
     locular: "unilocular",
@@ -908,13 +984,13 @@ export const Les = [
     definição: "Bem definida",
     cortical: "não",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "",
+    reabsorçãoradicular: "não",
     dentenirrompido: "não",
   },
 
   {
-    id:14,
+    id: 14,
     name: "Tumor Odontogênico Adenomatoide",
     densidade: "Misto",
     locular: "Unilocular",
@@ -922,12 +998,12 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "sim",
   },
   {
-    id:15,
+    id: 15,
     name: "Cisto Nasopalatino",
     densidade: "Hipodenso",
     locular: "Unilocular",
@@ -935,12 +1011,12 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "não",
     dentenirrompido: "não",
   },
   {
-    id:16,
+    id: 16,
     name: "Cisto Ósseo Simples",
     densidade: "Hipodenso",
     locular: "Unilocular",
@@ -948,26 +1024,26 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "não",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "não",
     dentenirrompido: "não",
   },
   {
-    id:17,
-    name: "Cisto de Stafne",
+    id: 17,
+    name: "Defeito de Stafne",
     densidade: "Hipodenso",
     locular: "Unilocular",
     margem: "Regular",
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "não",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "não",
     dentenirrompido: "não",
   },
 
   {
-    id:18,
+    id: 18,
     name: "Lesão Central de Células Gigantes",
     densidade: "Hipodenso",
     locular: "Multilocular",
@@ -975,12 +1051,12 @@ export const Les = [
     definição: "Bem definida",
     cortical: "não",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"sim",
-    reabsorçãoradicular:"sim",
+    deslocamentodedentes: "sim",
+    reabsorçãoradicular: "sim",
     dentenirrompido: "não",
   },
   {
-    id:19,
+    id: 19,
     name: "Fibroma Ossificante Central",
     densidade: "Misto",
     locular: "Unilocular",
@@ -988,8 +1064,8 @@ export const Les = [
     definição: "Bem definida",
     cortical: "sim",
     expansãoerosãoossea: "sim",
-    deslocamentodedentes:"não",
-    reabsorçãoradicular:"não",
+    deslocamentodedentes: "não",
+    reabsorçãoradicular: "não",
     dentenirrompido: "não",
-  }
+  },
 ];

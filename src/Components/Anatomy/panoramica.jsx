@@ -1,8 +1,9 @@
 import React from "react";
 //// CSS
-import "../../index.css"
+import "../../index.css";
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
+import { Message } from "semantic-ui-react";
 
 function Panoramica(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,6 @@ function Panoramica(props) {
     border: "2px solid #000",
     boxShadow: 24,
     p: 4,
-    
   };
 
   let [state, setState] = useState(false);
@@ -32,6 +32,8 @@ function Panoramica(props) {
   const mudarEstado = () => {
     setState(!false);
   };
+
+  
 
   return (
     <>
@@ -48,6 +50,18 @@ function Panoramica(props) {
             overflow-y="scroll"
           >
             <Box className="modaloverflow" sx={style}>
+              <div>
+                
+                  <Message
+                    size="tiny"
+                    
+                    as={"div"}
+                    style={{ margin: "5px" }}
+                  >
+                    Clique na imagem para revelar a estrutura!
+                  </Message>
+                
+              </div>
               <div className="img-modal">
                 <img
                   onClick={mudarEstado}
@@ -56,7 +70,12 @@ function Panoramica(props) {
                 />
               </div>
 
-              <Typography className="propsname" id="modal-modal-title" variant="h6" component="h2">
+              <Typography
+                className="propsname"
+                id="modal-modal-title"
+                variant="h6"
+                component="h2"
+              >
                 {props.dado.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>

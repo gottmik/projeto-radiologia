@@ -1,14 +1,16 @@
 import { useState } from "react";
 //// CSS
 import "../../../src/index.css";
-import { LesoeseAlteracoesDados } from "../../data-panoramica";
+import { Les } from "../../data-panoramica";
 import LesoeseAlteracoes from "./lesoesealteracoes";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Message } from "semantic-ui-react";
+
 
 const LesoeseAlteracoesPage = () => {
-  const datas = LesoeseAlteracoesDados ?? []; // PUXANDO O ARRAY DO DATABASE
+  const datas = Les ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
   const [dados, setDados] = useState(datas);
@@ -24,7 +26,9 @@ const LesoeseAlteracoesPage = () => {
 
   return (
     <div className="principaldalesoesealt">
+      
       <div className="lesoesealtpesquisa">
+        
         <TextField
           onChange={filterOnChange}
           className="textfield"
@@ -34,6 +38,18 @@ const LesoeseAlteracoesPage = () => {
           size="large"
           color="secondary"
         />
+        <div>
+                
+                <Message
+                  size="tiny"
+                  color="red"
+                  as={"div"}
+                  style={{ margin: "5px" }}
+                >
+                  Pagina em manutenção.
+                </Message>
+              
+            </div>
       </div>
 
       <div className="lesoesealtrespostas">

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { Les } from "../data-panoramica";
 
+
 export default function Descricao() {
   const datas = Les ?? []; // PUXANDO O ARRAY DO DATABASE
 
@@ -98,6 +99,11 @@ export default function Descricao() {
     setResultados(encontrados);
   }
 
+  
+
+  
+  
+
   return (
     <div className="primeirasectiondesc">
       <div className="containerdesc">
@@ -123,7 +129,7 @@ export default function Descricao() {
             <p value={valor}>{valor}</p>
           </div>
         </div>
-        <div style={{width:"80%", height:"100px"}}>
+        <div style={{ width: "80%", height: "100px" }}>
           <h6>Possíveis diagnósticos:</h6>
           {resultados.length > 0 ? (
             <h6>{resultados.join(", ")}</h6>
@@ -307,6 +313,9 @@ export default function Descricao() {
               </button>
             </div>
           </div>
+          
+          
+          
         </div>
         <div className="Botoex">
           <div className="botoess">
