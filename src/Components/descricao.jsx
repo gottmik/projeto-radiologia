@@ -28,7 +28,7 @@ export default function Descricao() {
     "causando expansão e adelgaçamento das corticais";
   let desloc = "deslocamento dentário";
   let reabs = "promovendo reabsorção das raízes dos elementos";
-  let estendese = "estende-se do(a) ___ até o(a) ___ ";
+  
 
   let [valor, setValor] = useState("");
 
