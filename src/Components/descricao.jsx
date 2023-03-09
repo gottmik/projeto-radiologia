@@ -2,7 +2,6 @@ import React, { useState } from "react";
 //// CSS
 import CopyToClipBoard from "react-copy-to-clipboard";
 import { Link } from "react-router-dom";
-import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { Les } from "../data-panoramica";
 import { Grid, Header, Icon, Message } from "semantic-ui-react";
 
@@ -28,8 +27,9 @@ export default function Descricao() {
   let expansaoeadelgcortical =
     "causando expansão e adelgaçamento das corticais";
   let desloc = "deslocamento dentário";
-  let reabs = "promovendo reabsorção das raízes dos elementos";
-  
+  let reabs = "promovendo reabsorção da(s) raíz(es) do(s) elemento(s)";
+  let irromp = "associado ao elemento irrompido"
+  let bemdef = "bem definida"
 
   let [valor, setValor] = useState("");
 
@@ -148,7 +148,7 @@ export default function Descricao() {
             <p value={valor}>{valor}</p>
           </div>
         </div>
-        <div style={{ width: "80%", height: "100px" }}>
+        <div style={{ width: "80%", height: "100px", overflowY:"scroll" }}>
           <p style={{fontSize:".8rem"}}>Possíveis diagnósticos:</p>
           {resultados.length > 0 ? (
             <h6>{resultados.join(", ")}</h6>

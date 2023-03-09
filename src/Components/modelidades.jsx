@@ -12,7 +12,7 @@ export default function Modelidades() {
   return (
     <div className="principaldamodalidade">
       <Grid centered>
-        <Grid.Row style={{ marginTop: "20px" }} columns={3}>
+        <Grid.Row style={{ marginTop: "10px" }} columns={3}>
           <Grid.Column as={Link} to="/" verticalAlign="middle" width={4}>
             <Icon name="angle left" size="big" />
           </Grid.Column>
