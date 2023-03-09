@@ -18,6 +18,13 @@
   
 }
 
+@media (max-width: 599.95px){
+
+.css-1ujnqem-MuiTabs-root .MuiTabs-scrollButtons {
+display: inline-flex!important;
+}
+}
+
 .radiohelp {
   height: 90%;
   display: flex;

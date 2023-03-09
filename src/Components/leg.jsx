@@ -24,7 +24,7 @@ export default function Leg(props) {
           {props.dado.frase}
         </div>
         <div className="C3">
-          <CopyToClipBoard text={userText}>
+          <CopyToClipBoard text={userText ? userText : props.dado.frase}>
             <ContentCopyIcon className="botao"/>
           </CopyToClipBoard>
         </div>
