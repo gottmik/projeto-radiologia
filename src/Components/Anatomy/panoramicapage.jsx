@@ -1,12 +1,13 @@
 import { useState } from "react";
 //// CSS
-import "../../../src/index.css"
+import "../../../src/index.css";
 import { PanoramicaDados } from "../../data-panoramica";
 import Panoramica from "./panoramica";
-import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Message } from "semantic-ui-react";
+
+import { Grid, Header, Icon, Message } from "semantic-ui-react";
 
 const PanoramicaPage = () => {
   const datas = PanoramicaDados ?? []; // PUXANDO O ARRAY DO DATABASE
@@ -23,14 +24,26 @@ const PanoramicaPage = () => {
     setDados(updatedList);
   };
 
-
-
-
-
   return (
     <div className="principaldalesoesealt">
-      
-      
+      <Grid centered style={{ margin: "1px"}}>
+        <Grid.Row columns={3}>
+          <Grid.Column as={Link} to="/escolha" verticalAlign="middle" width={2}>
+            <Icon name="angle left" size="big" />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle" width={12}>
+            <Header className="radiohelpcolor" size="large">
+              ¡RadioHelp!
+            </Header>
+          </Grid.Column>
+          <Grid.Column
+            width={2}
+            verticalAlign="middle"
+            textAlign="right"
+          ></Grid.Column>
+        </Grid.Row>
+      </Grid>
+
       <div className="lesoesealtpesquisa">
         <TextField
           onChange={filterOnChange}
@@ -41,19 +54,11 @@ const PanoramicaPage = () => {
           size="large"
         />
       </div>
-      
 
       <div className="lesoesealtrespostas">
         {dados.map((dado) => (
           <Panoramica dado={dado} key={dado.id} />
         ))}
-      </div>
-      <div style={{width:"100%"}}>
-        <Link to="/escolha">
-          <button className="lesoesvoltarbot">
-            <KeyboardBackspaceIcon fontSize="large" />
-          </button>
-        </Link>
       </div>
     </div>
   );

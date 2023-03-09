@@ -4,7 +4,7 @@ import { DataLegenda } from "../data-legendas";
 import Leg from "../Components/leg";
 import { TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import { Grid, Header, Icon } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import Tab from "@mui/material/Tab";
 
@@ -65,7 +65,25 @@ export default function Legenda() {
   };
 
   return (
+
     <div className="dBody">
+       <Grid centered style={{ margin: "1px" }}>
+        <Grid.Row columns={3}>
+          <Grid.Column as={Link} to="/escolha" verticalAlign="middle" width={2}>
+            <Icon name="angle left" size="big" />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle" width={12}>
+            <Header className="radiohelpcolor" size="large">
+              ¡RadioHelp!
+            </Header>
+          </Grid.Column>
+          <Grid.Column
+            width={2}
+            verticalAlign="middle"
+            textAlign="right"
+          ></Grid.Column>
+        </Grid.Row>
+      </Grid>
       <div className="PrimeiraSection">
         <div className="legendapesquisar">
           <TextField
@@ -96,7 +114,8 @@ export default function Legenda() {
                 <Tab label="ATM" {...a11yProps(6)} />
               </Tabs>
             </Box>
-            <TabPanel value={value} index={0}>
+            <Box style={{height:"75vh",overflow:"scroll"}}>
+            <TabPanel value={value} index={0} >
               {dados
                 .filter((dado) => {
                   return dado.subtipo === "Terceiros Molares";
@@ -160,19 +179,14 @@ export default function Legenda() {
                 ))}
             </TabPanel>
           </Box>
+          </Box>
           {/* 
           {dados.map((dado) => (
             <Leg dado={dado} />
           ))}
           */}
         </div>
-        <div className="legvoltardiv">
-          <Link to="/escolha">
-            <button className="botaoleg">
-              <KeyboardBackspaceIcon fontSize="large" />
-            </button>
-          </Link>
-        </div>
+        
       </div>
     </div>
   );

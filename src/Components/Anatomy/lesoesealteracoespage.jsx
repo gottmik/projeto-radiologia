@@ -6,7 +6,7 @@ import LesoeseAlteracoes from "./lesoesealteracoes";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Message } from "semantic-ui-react";
+import { Button, Grid, Header, Icon, Label, Message } from "semantic-ui-react";
 
 
 const LesoeseAlteracoesPage = () => {
@@ -26,6 +26,23 @@ const LesoeseAlteracoesPage = () => {
 
   return (
     <div className="principaldalesoesealt">
+      <Grid centered style={{ margin: "1px" }}>
+        <Grid.Row columns={3}>
+          <Grid.Column as={Link} to="/escolha" verticalAlign="middle" width={2}>
+            <Icon name="angle left" size="big" />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle" width={12}>
+            <Header className="radiohelpcolor" size="large">
+              ¡RadioHelp!
+            </Header>
+          </Grid.Column>
+          <Grid.Column
+            width={2}
+            verticalAlign="middle"
+            textAlign="right"
+          ></Grid.Column>
+        </Grid.Row>
+      </Grid>
       
       <div className="lesoesealtpesquisa">
         
@@ -57,13 +74,7 @@ const LesoeseAlteracoesPage = () => {
           <LesoeseAlteracoes dado={dado} key={dado.id} />
         ))}
       </div>
-      <div style={{ width: "100%" }}>
-        <Link to="/escolha">
-          <button className="lesoesvoltarbot">
-            <KeyboardBackspaceIcon fontSize="large" />
-          </button>
-        </Link>
-      </div>
+     
     </div>
   );
 };

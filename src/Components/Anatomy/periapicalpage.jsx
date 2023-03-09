@@ -12,6 +12,7 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import { Box } from "@mui/material";
 import { Message } from "semantic-ui-react";
+import { Grid, Header, Icon } from "semantic-ui-react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -80,6 +81,32 @@ const PeriapicalPage = () => {
   return (
     
       <div className="principaldaperiapical">
+        <Grid centered style={{ margin: "1px" }}>
+        <Grid.Row columns={3}>
+          <Grid.Column as={Link} to="/escolha" verticalAlign="middle" width={2}>
+            <Icon name="angle left" size="big" />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle" width={12}>
+            <Header className="radiohelpcolor" size="large">
+              ¡RadioHelp!
+            </Header>
+          </Grid.Column>
+          <Grid.Column
+            width={2}
+            verticalAlign="middle"
+            textAlign="right"
+          ></Grid.Column>
+        </Grid.Row>
+      </Grid>
+      <div>
+
+          {visible ? <Message onDismiss={handleDismiss} color="brown" as={"div"} style={{ marginTop: "0px" }}> 
+            Nesta sessão iremos evidênciar as sobreposições das estruturas
+            anatômicas nas radiografias periapicais.
+           
+          </Message>: <></>}
+
+        </div>
         <div className="lesoesealtpesquisa">
           <TextField
             onChange={filterOnChange}
@@ -90,15 +117,7 @@ const PeriapicalPage = () => {
             size="large"
           />
         </div>
-        <div>
-
-          {visible ? <Message onDismiss={handleDismiss} color="brown" as={"div"} style={{ marginTop: "0px" }}> 
-            Nesta sessão iremos evidênciar as sobreposições das estruturas
-            anatômicas nas radiografias periapicais.
-           
-          </Message>: <></>}
-
-        </div>
+        
 
         <Box sx={{ width: "100%" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -155,13 +174,7 @@ const PeriapicalPage = () => {
                 ))}
             </TabPanel>
           </div>
-          <div className="periapicalbotdiv">
-            <Link to="/escolha">
-              <button className="voltarbuttonperi">
-                <KeyboardBackspaceIcon fontSize="large" />
-              </button>
-            </Link>
-          </div>
+          
         </Box>
       </div>
     

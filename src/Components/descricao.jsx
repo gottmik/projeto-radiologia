@@ -4,6 +4,7 @@ import CopyToClipBoard from "react-copy-to-clipboard";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { Les } from "../data-panoramica";
+import { Grid, Header, Icon, Message } from "semantic-ui-react";
 
 
 export default function Descricao() {
@@ -39,6 +40,7 @@ export default function Descricao() {
 
   function Zerar() {
     setValor("");
+    setResultados("");
   }
 
   function Formatar(frase) {
@@ -106,8 +108,25 @@ export default function Descricao() {
 
   return (
     <div className="primeirasectiondesc">
+      <Grid centered style={{ margin: "1px" }}>
+        <Grid.Row columns={3}>
+          <Grid.Column as={Link} to="/escolha" verticalAlign="middle" width={2}>
+            <Icon name="angle left" size="big" />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle" width={12}>
+            <Header className="radiohelpcolor" size="large">
+              ¡RadioHelp!
+            </Header>
+          </Grid.Column>
+          <Grid.Column
+            width={2}
+            verticalAlign="middle"
+            textAlign="right"
+          ></Grid.Column>
+        </Grid.Row>
+      </Grid>
       <div className="containerdesc">
-        <div></div>
+        
         <div className="paragrafodesc">
           <div
             style={{
@@ -130,13 +149,16 @@ export default function Descricao() {
           </div>
         </div>
         <div style={{ width: "80%", height: "100px" }}>
-          <h6>Possíveis diagnósticos:</h6>
+          <p style={{fontSize:".8rem"}}>Possíveis diagnósticos:</p>
           {resultados.length > 0 ? (
             <h6>{resultados.join(", ")}</h6>
           ) : (
             <span></span>
           )}
         </div>
+        <Message className="mensagemdesc" size="tiny">
+          Atenção! Essa ferramenta serve para apenas auxiliar o conhecimento do radiologista e não dar diagnóstico.
+        </Message>
         <div className="Container-botoes">
           <div className="Botoes-pai">
             <div className="buttonn ">
@@ -330,13 +352,7 @@ export default function Descricao() {
           </div>
         </div>
       </div>
-      <div className="">
-        <Link to="/escolha">
-          <button className="lesoesvoltarbot">
-            <KeyboardBackspaceIcon fontSize="large" />
-          </button>
-        </Link>
-      </div>
+      
     </div>
   );
 }

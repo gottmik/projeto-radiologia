@@ -87,8 +87,23 @@
   align-items: center;
   font-size: 1.1rem;
 }
+
+.iteml img{
+  width: 40px;
+  height: 40px;
+  border-radius: 2em;
+}
+
+
+.modalidadegrid{
+  
+  background-color: var(--offwhite);
+  width: 90%;
+}
+
 .item a {
   color: var(--offwhite) !important;
+  
 }
 .item2 {
   min-height: 110px;
@@ -210,10 +225,7 @@ a:hover {
   height: 100%;
 
   background-color: #ccccce1d;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  
 }
 
 .textfield {
@@ -410,7 +422,7 @@ a:hover {
   background-color: white;
   width: 300px;
   height: 80px;
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -513,5 +525,11 @@ a:hover {
 
 .corrigirwidth{
  width: 100%;
+}
+
+.mensagemdesc{
+  font-size: 0.7rem!important;
+  width: 80%;
+
 }
 
