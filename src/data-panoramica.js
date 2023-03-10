@@ -819,13 +819,7 @@ export const Lesa = [
     reabsorçãoradicular:
       "promovendo reabsorção da(s) raíz(es) do(s) elemento(s)",
     dentenirrompido: "associado ao elemento não irrompido",
-    multilocular1: "multilocular",
-    margem1: "irregular",
-    definição1: "bem definida",
-    cortical1: [
-      "com borda corticalizada",
-      "com borda parcialmente corticalizada",
-    ],
+    
     expansãoerosãoossea1: true,
     deslocamentodedentes1: true,
     reabsorçãoradicular1: true,
