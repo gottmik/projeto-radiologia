@@ -34,7 +34,7 @@ function Home() {
             </h1>
           </div>
         </Grid.Column>
-        <Grid.Column width={6} verticalAlign="bottom" textAlign="right">
+        <Grid.Column width={6} verticalAlign="middle" textAlign="right">
           <a href="https://www.instagram.com/radiohelpapp/">
             <Icon style={{ fontSize: "2.9rem", marginRight:"9%"}}  name="instagram" size="huge" />
           </a>
