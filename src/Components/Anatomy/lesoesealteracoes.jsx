@@ -3,6 +3,7 @@ import React from "react";
 import "../../index.css"
 import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
+import { PropaneSharp } from "@mui/icons-material";
 
 function LesoeseAlteracoes(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,11 +49,23 @@ function LesoeseAlteracoes(props) {
                 <img src={props.dado.img} alt="Alguma imagem" />
               </div>
               <Typography className="propsname" id="modal-modal-title" variant="h6" component="h2">
-                {props.dado.name}
+               <b>{props.dado.name}</b> 
               </Typography>
+              
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              {props.dado.texto}
+                <b>Caracteristicas Imaginológicas:</b> <br></br><br></br>Lesão radiolúcida/hipodensa, unilocular, de margem regular, bem definida, com borda corticalizada 
               </Typography>
+
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+               <b> Sobre:<br></br><br></br> </b>
+              </Typography>
+
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <b>Diagnóstico Diferencial:</b> <br></br><br></br> {props.dado.diagdif}
+              </Typography>
+              
+             
+             
             </Box>
           </Modal>
         </div>

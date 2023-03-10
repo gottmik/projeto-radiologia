@@ -1,16 +1,16 @@
 import { useState } from "react";
 //// CSS
 import "../../../src/index.css";
-import { Les } from "../../data-panoramica";
+import { Lesa } from "../../data-panoramica";
 import LesoeseAlteracoes from "./lesoesealteracoes";
-import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Button, Grid, Header, Icon, Label, Message } from "semantic-ui-react";
+import {  Grid, Header, Icon, Message } from "semantic-ui-react";
 
 
 const LesoeseAlteracoesPage = () => {
-  const datas = Les ?? []; // PUXANDO O ARRAY DO DATABASE
+  const datas = Lesa ?? []; // PUXANDO O ARRAY DO DATABASE
   // const [busca, setBusca] = useState('');
 
   const [dados, setDados] = useState(datas);

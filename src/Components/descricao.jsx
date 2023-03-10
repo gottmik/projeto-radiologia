@@ -5,37 +5,34 @@ import { Link } from "react-router-dom";
 import { Les } from "../data-panoramica";
 import { Grid, Header, Icon, Message } from "semantic-ui-react";
 
-
 export default function Descricao() {
   const datas = Les ?? []; // PUXANDO O ARRAY DO DATABASE
 
-  let radiolucida = "radiolucida";
-  let radiopaca = "radiopaca";
-  let bemdelimitada = "bem delimitada";
-  let maldelimitada = "difusa";
-  let regular = "de margem regular";
-  let irregular = "de margem irregular";
-  let corticalizada = "com borda corticalizada";
-  let parcialcortical = "parcialmente corticalizada";
-
-  let hipodenso = "hipodensa";
-  let hiperdenso = "hiperdensa";
-  let unilocular = "unilocular";
-  let multilocular = "multilocular";
-  let misto = "mista";
-  let expansaocortical = "causando expansão das corticais";
-  let expansaoeadelgcortical =
-    "causando expansão e adelgaçamento das corticais";
-  let desloc = "deslocamento dentário";
-  let reabs = "promovendo reabsorção da(s) raíz(es) do(s) elemento(s)";
-  let irromp = "associado ao elemento irrompido"
-  let bemdef = "bem definida"
+  const radiolucida = "radiolucida";
+  const radiopaca = "radiopaca";
+  const bemdelimitada = "bem delimitada";
+  const maldelimitada = "difusa";
+  const regular = "de margem regular";
+  const irregular = "de margem irregular";
+  const corticalizada = "com borda corticalizada";
+  const parcialcortical = "parcialmente corticalizada";
+  const hipodenso = "hipodensa";
+  const hiperdenso = "hiperdensa";
+  const unilocular = "unilocular";
+  const multilocular = "multilocular";
+  const misto = "mista";
+  const expansaocortical = "causando expansão das corticais";
+  const expansaoeadelgcortical = "causando expansão e adelgaçamento das corticais";
+  const desloc = "deslocamento dentário";
+  const reabs = "promovendo reabsorção das raízes dos elementos";
 
   let [valor, setValor] = useState("");
 
   function HandleOnChange(e) {
     setValor((valor += e.target.value + ", "));
-    handleBusca();
+    handleBusca()
+    
+   
   }
 
   function Zerar() {
@@ -61,50 +58,55 @@ export default function Descricao() {
   }
 
   const array = stringParaArray(valor);
-
-  console.log(array, datas);
+  console.log(array)
 
   const [resultados, setResultados] = useState([]);
 
   function compararArrayComObjetos(array, objetos) {
     const objetosEncontrados = [];
-
-    // Itera sobre cada objeto no array de objetos
+  
+    // Cria um conjunto com todas as propriedades dos objetos
+    const propriedades = new Set();
+    objetos.forEach((objeto) => {
+      Object.keys(objeto).forEach((propriedade) => {
+        propriedades.add(propriedade);
+      });
+    });
+  
     objetos.forEach((objeto) => {
       let encontrou = true;
-
-      // Itera sobre cada elemento do array de busca
+  
       array.forEach((elemento) => {
+        let elementoEncontrado = false;
+  
         // Verifica se o valor do elemento está presente em alguma propriedade do objeto
-        if (!Object.values(objeto).includes(elemento)) {
+        propriedades.forEach((propriedade) => {
+          if (String(objeto[propriedade]).toLowerCase().includes(elemento.toLowerCase())) {
+            elementoEncontrado = true;
+          }
+        });
+  
+        if (!elementoEncontrado) {
           encontrou = false;
         }
       });
-
-      // Se o objeto contém todos os valores do array de busca, adiciona o nome do objeto ao array de resultados
+  
       if (encontrou) {
         objetosEncontrados.push(objeto.name);
       }
     });
-
+  
     return objetosEncontrados;
   }
+  
 
   function handleBusca() {
     const objetos = Les;
-
-    const arrayBusca = array;
-
-    const encontrados = compararArrayComObjetos(arrayBusca, objetos);
-    console.log(arrayBusca);
+    
+    const encontrados = compararArrayComObjetos(array, objetos);
 
     setResultados(encontrados);
   }
-
-  
-
-  
-  
 
   return (
     <div className="primeirasectiondesc">
@@ -126,7 +128,6 @@ export default function Descricao() {
         </Grid.Row>
       </Grid>
       <div className="containerdesc">
-        
         <div className="paragrafodesc">
           <div
             style={{
@@ -148,8 +149,8 @@ export default function Descricao() {
             <p value={valor}>{valor}</p>
           </div>
         </div>
-        <div style={{ width: "80%", height: "100px", overflowY:"scroll" }}>
-          <p style={{fontSize:".8rem"}}>Possíveis diagnósticos:</p>
+        <div style={{ width: "80%", height: "100px", overflowY: "scroll" }}>
+          <p style={{ fontSize: ".8rem" }}>Possíveis diagnósticos:</p>
           {resultados.length > 0 ? (
             <h6>{resultados.join(", ")}</h6>
           ) : (
@@ -157,7 +158,7 @@ export default function Descricao() {
           )}
         </div>
         <Message className="mensagemdesc" size="tiny">
-          Atenção! Essa ferramenta serve para apenas auxiliar o conhecimento do radiologista e não dar diagnóstico.
+          Atenção! Essa ferramenta serve para apenas auxiliar e não fechar diagnóstico.
         </Message>
         <div className="Container-botoes">
           <div className="Botoes-pai">
@@ -335,9 +336,6 @@ export default function Descricao() {
               </button>
             </div>
           </div>
-          
-          
-          
         </div>
         <div className="Botoex">
           <div className="botoess">
@@ -352,7 +350,6 @@ export default function Descricao() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

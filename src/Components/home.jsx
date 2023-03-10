@@ -30,8 +30,7 @@ function Home() {
         <Grid.Column width={10}>
           <div className="desenvolvidopor">
             <h1 style={{ fontSize: "0.8rem" }}>
-              Desenvolvido por Marcela Fróes Dentista Implantodontista,
-              Radiologista e Aspirante a Programadora.
+              Em desenvolvimento por Marcela Fróes, dentista implantodontista, quase radiologista e aspirante a programadora. Com o auxilio dos colegas da turma 12 da INCO25.
             </h1>
           </div>
         </Grid.Column>

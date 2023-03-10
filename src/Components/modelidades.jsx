@@ -68,7 +68,7 @@ export default function Modelidades() {
         <Grid.Row centered style={{paddingTop:"0"}} columns={1}>
           <Grid.Column textAlign="left" width={13} >
             <Header.Subheader>
-              Aqui você encontrara as alterações mais comuns encontradas e seus{" "}
+              Aqui você encontrará as alterações mais comuns e seus respectivos{" "}
               <b>diagnosticos diferenciais.</b>
             </Header.Subheader>
           </Grid.Column>
@@ -77,7 +77,7 @@ export default function Modelidades() {
      
       <Header style={{ fontSize: "1.2rem", marginTop: "3%", color:"rgb(41, 40, 40,0.6)" }}>
         {" "}
-        Estruturas Anatomicas
+        Estruturas Anatômicas
       </Header>
       <Grid>
         <Grid.Row className="carouselpai" columns={1}>
