@@ -57,7 +57,7 @@ function LesoeseAlteracoes(props) {
               </Typography>
 
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               <b> Sobre:<br></br><br></br> </b>
+               <b> Sobre:<br></br><br></br>O ameloblastoma unicístico é um tipo de tumor odontogênico benigno que se forma a partir do tecido dental e se apresenta como uma cavidade única na mandíbula ou maxila. Ele é formado a partir de células ameloblastos, que normalmente formam o esmalte dentário. Embora seja geralmente benigno, pode ser invasivo e causar destruição do osso ao redor. O tratamento envolve a remoção cirúrgica do tumor e acompanhamento a longo prazo.</b>
               </Typography>
 
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
